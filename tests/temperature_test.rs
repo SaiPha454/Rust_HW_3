@@ -1,5 +1,5 @@
 use assert_cmd::Command;
-use lab3::tem_table::convert_temparature; //import the function from the module from lib.rs
+use hw3::tem_table::convert_temparature; //import the function from the module from lib.rs
 
 #[test]
 fn test_temperature_table() {

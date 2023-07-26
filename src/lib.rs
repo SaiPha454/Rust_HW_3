@@ -42,3 +42,49 @@ pub mod tem_table {
         return table;
     }
 }
+
+
+//module for printing arrows
+pub mod arrow {
+
+    pub fn print_arrow(star : &i32)-> String {
+        let mut arrows = String::new();
+        for i in 1..(star*2) {
+            if i <=  *star {
+                for _j in 0..i {
+                    arrows.push_str("*");
+                }
+            }else {
+                for _j in 0..(star*2 -i) {
+                    arrows.push_str("*");
+                }
+            }
+            arrows.push_str("\n");
+        }
+        return arrows;
+    }
+
+    pub fn print_arrow_rev(star : &i32) -> String {
+
+        let mut arrows = String::new();
+        for i in 1..(star*2) {
+            if i <= *star {
+                for _j in 0..(star - i) {
+                    arrows.push_str(" ");
+                }
+                for _k in 0..i {
+                    arrows.push_str("*");
+                }
+            }else {
+                for _j in 0..(i-star) {
+                    arrows.push_str(" ");
+                }
+                for _k in i..(star*2) {
+                    arrows.push_str("*");
+                }
+            }
+            arrows.push_str("\n");
+        }
+        return arrows;
+    }
+}

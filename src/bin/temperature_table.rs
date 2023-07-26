@@ -1,5 +1,5 @@
 use clap::{App, Arg};
-use lab3::tem_table::convert_temparature; //import the function from lib.rs
+use hw3::tem_table::convert_temparature; //import the function from lib.rs
 
 fn main () {
 
